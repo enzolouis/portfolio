@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap');
+
+
+main {
+  padding:0;
+  margin:0;
+}
+
+div.welcome-image {
+	font-size: 35px;
+	background-image: url("https://cdn.glitch.global/ca48c3f1-3c91-413b-ab92-2ec674cda458/%E2%80%94Pngtree%E2%80%94pink%20playful%20abstract%20portfolio%20memphis_1347369.png?v=1696022296367");
+  /* local : url("../img/architecture.jpeg"); */
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-attachment: fixed;
+
+
+	height: 100%;
+  
+  margin:0 !important;
+}
+
+div.welcome-image h1 {
+  text-align:center;
+  font-size:80px;
+  font-weight:700;
+  letter-spacing:5px;
+	color: white;
+  margin:0;
+  padding: 15% 5% 25% 5%;
+}
+
+
+
+.body {
+  background-color:rgba(240, 240, 240, 1);
+  padding-bottom:5%;
+  
+}
+
+
+.body .content, .body2 .content {
+	text-align:center;
+  margin: 0 20%;
+	padding: 10% 5%;
+	background-color: white;
+}
+
+
+.body .boxes {
+	margin: 0 20%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.body .boxes .box {
+	background-color: white;
+	flex: 1 0 40%;
+	margin: 2%;
+	width: 100px;
+	height: 100%;
+	padding:0;
+	
+
+	border-radius: 10px;
+
+	-webkit-box-shadow: 18px 14px 15px -10px #000000; 
+  box-shadow: 18px 14px 15px -10px #000000;
+}
+
+.body .boxes .box:nth-child(2n-1) {
+  border-left:10px solid #00CEC9;
+}
+
+.body .boxes .box:nth-child(2n) {
+  border-left:10px solid #44B78B;
+}
+
+.body .boxes .box:nth-child(3n) {
+  border-left:10px solid #0097E6;
+}
+
+.body .boxes .box h2 {
+  text-align:center;
+  font-size:25px;
+}
+
+.body .boxes .box p {
+  text-align:center;
+  font-size:17px;
+}
+
+.body .boxes .box ul {
+  font-size:17px;
+  margin:10px;
+  padding:0;
+  text-align:left;
+}
+
+
+
+.body .boxes .box ul li {
+  margin:0;
+}
+
+.body .boxes .box ul li svg {
+  width:10px;
+  margin-right:6px;
+}
+.body .boxes .box ul li.langage-python svg {
+  color:orange;
+}
+
+.body .boxes .box img {
+  width:100%;
+  height:100%;
+}
+
+
+.body2 {
+  background-color:rgba(240, 240, 240, 0.5);
+  padding-top:15%;
+  padding-bottom:150%;
+  
+}
+
+.body2 .content {
+  margin: 0 15%;
+  padding:5%;
+}
+
+.body2 .two-sides {
+  text-align:center;
+  margin: 0 15%;
+  font-size:16px;
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.body2 .two-sides div {
+  flex:1 0 20%;
+  background-color:white;
+  padding:5%;
+  color:#666666;
+}
+
+.body2 .two-sides div:nth-child(1) {
+  border-right:1px solid #d8d8d8;
+}
+.body2 .two-sides div:nth-child(2) {
+  border-left:1px solid #d8d8d8;
+}
+
+
+.image-scroll {
+  
+  opacity:0;
+  transform:translateY(4em) rotateZ(-5deg);
+  transition: transform 2s .25s cubic-bezier(0,1,.3,1),
+              opacity 2s .25s ease-out;
+}
+
+.image-scroll-visible {
+  opacity:1;
+  transform:rotateZ(0deg);
+}

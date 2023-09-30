@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+/* use */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+
+@import 'header.css';
+@import 'footer.css';
+
+/*
+https://www.youtube.com/watch?v=9-GXlvohlvA&list=WL&index=18
+*/
+
+:root {
+	--main-color: #353b48;
+	--main-background-color:  #f0f0f0; /* #dcdde1; */
+}
+
+
+* {box-sizing: border-box; font-weight:300;}
+a {text-decoration: none;}
+ul, ol, li {list-style-type: none;}
+button {border: none;}
+main {padding: 0; /* color: #0C4B33; #44B78B */}
+html {height: 100%}
+
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Fredoka', sans-serif; /* SITE DJANGO.COM */
+	font-weight: 300;
+	/* GOOGLE FONT : font-family: 'Montserrat', sans-serif; */
+
+	background-color:var(--main-background-color);
+  
+
+	/* MISE EN PLACE DU DISPLAY FLEX POUR COLLER LE FOOTER EN BAS DE PAGE QUAND LA PAGE EST COURTE */
+	min-height: 100%; /* OR 100vh without html{height: 100%} */
+	display: flex;
+	flex-direction: column;
+	/* --- */
+}
+
+@media (max-width: 800px) {
+	body {
+		/* font-size:50%; */
+	}
+}
+
+@media (min-width: 810px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.main-title-flex {
+	border-bottom: 1px solid #d8d8d8;
+}
+
+div.main-title-flex h1 {
+	text-align: center;
+}
+
+/* NON UTILISE POUR L'INSTANT */
+
+
+div.main-title-flex div.searchbar {
+	background-color: white;
+	display: flex;
+}
+
+div.main-title-flex div.searchbar input {
+	flex: 2;
+	background-color: white;
+	border: none;
+	padding: 1%;
+	font-size: 17px;
+	color: #0097e6;
+	font-weight: bold;
+	padding-left: 5%;
+}
+
+div.main-title-flex div.searchbar input:focus {
+	outline: none;
+}
+
+div.main-title-flex div.searchbar button {
+	flex: 0;
+	background-color: white;
+	cursor: pointer;
+	padding: 1%;
+	padding-right: 5%;
+}
+
+div.main-title-flex div.searchbar button svg {
+	color: #0097e6;
+	transform: scale(1);
+}
+
+
+div.main-title-flex div.searchbar:hover > input {
+	transition: padding 0.2s;
+	padding-left: 15%;
+}
+
+div.main-title-flex div.searchbar:hover > button {
+	transition: padding 0.2s;
+	padding-right: 15%;
+}
+
+div.main-title-flex div.searchbar:hover > button > svg {
+	transition: transform 0.2s 0.2s, color 0.2s 0.2s;
+	transform: scale(1.9);
+	color: red;
+}
+
+
+
+
+/* POURQUOI ON NE MET PAS JUSTE FLOAT: LEFT; ET FLOAT: RIGHT; -> https://learn.shayhowe.com/html-css/positioning-content/ */
+section {
+	float: right;
+	margin: 0; /* juste 0 ? */
+  	width:80%;
+  	padding-left: 3%;
+}
+
+aside {
+	/* float: left;  APPAREMENT PAS BESOIN DE LE METTRE */ 
+	margin: 0 1.5%;  /* juste 0 ? */
+	width: 20%;
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+
+
+
+aside nav ul.outside {
+	padding: 0;
+	margin: 0;
+	border-right: 2px solid #d8d8d8;
+	height: 50%;
+}
+
+aside nav ul.outside li.outside {
+	border-top: 5px solid #d8d8d8;
+	padding: 0;
+}
+
+aside nav ul.outside li.outside a {
+	/* POUVOIR CLIQUER SUR TOUTES LA CASE (li) */
+	display: block;
+	width: 100%;
+	/* --- */
+	color: black;
+}
+
+aside nav ul.outside li.outside > a {
+	padding: 3%;
+	text-align: center;
+}
+
+
+aside nav ul.outside li.outside ul.inside {
+	border-top: 1px solid #d8d8d8; /*#cccccc*/
+	border-left: 1px solid #d8d8d8;
+	padding: 0;
+}
+
+aside nav ul.outside li.outside ul.inside li.inside {
+	list-style-type: none; /* square */
+	border-bottom: 1px solid #d8d8d8;
+}
+
+aside nav ul.outside li.outside ul.inside li.inside svg {
+	margin-right: 5px;
+}
+
+aside nav ul.outside li.outside ul.inside li.inside a {
+	font-weight: 500;
+	padding: 2%;
+}
+
+aside nav ul.outside li.outside ul.inside li.inside a:hover {
+	background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+
+
+
+
+
+main div.section-container section {
+	background-color: #ffffff; /* f5f6fa */
+	font-family: 'Lora', serif;
+	font-weight: 400;
+}
